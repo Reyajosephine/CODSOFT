@@ -18,29 +18,34 @@ This repository contains a Python implementation of the classic Tic-Tac-Toe game
 git clone https://github.com/Reyajosephine/CODSOFT.git
 cd TIC-TAC-TOE
 ```
-## Install dependencies:
+### Install dependencies:
 
 ```bash
 pip install kivy
 ```
 
-## Login / Register:
+### Login / Register:
 
 - When the app starts, you'll be prompted to either login or register.
 - Use the provided UI to enter your username and password.
 
-## Dashboard:
+### Dashboard:
 
 - After login, you'll see the dashboard where you can choose the difficulty level (Easy, Medium, Hard).
 
-## Gameplay:
+### Gameplay:
 - Play Tic-Tac-Toe against the AI.
 - Click on the cells to make your move.
 - The AI will respond based on the chosen difficulty level.
 
-## Game Over:
+### Game Over:
 - A popup will appear announcing the winner or if it's a draw.
 - Click "Restart" to play again or return to the dashboard.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+If you have any questions or suggestions, feel free to open an issue or contact me at 'reyacelene@gmail.com'.
+
+Thank you for checking out this project! Have fun playing `Tic Tac Toe!`
