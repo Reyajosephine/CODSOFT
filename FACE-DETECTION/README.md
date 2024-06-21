@@ -49,8 +49,8 @@ pip install -r requirements.txt
 - The system will start capturing frames from the selected video source (webcam or file).
 - Detected faces will be highlighted with a bounding box and labeled with their names if recognized.
 - If an unknown face is detected, a separate window will prompt you to add a name for that face.
-- Press 'a' to add the face with a new name.
-- Press 'c' to continue without adding the face.
+- Press '**a**' to add the face with a new name.
+- Press '**c**' to continue without adding the face.
 - Added faces are stored persistently in `known_faces.json`.
   
 ## Contributions
