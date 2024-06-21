@@ -138,11 +138,11 @@ class LoginScreen(Screen):
         self.password_input = TextInput(hint_text="Password", multiline=False, password=True, size_hint=(1, 0.2))
         layout.add_widget(self.password_input)
 
-        self.login_button = Button(text="Login", background_color=(0.1, 0.5, 0.7, 1), size_hint=(1, 0.2))
+        self.login_button = Button(text="Login", background_color=(0, 1, 1, 1), size_hint=(1, 0.2))
         self.login_button.bind(on_press=self.login)
         layout.add_widget(self.login_button)
 
-        self.register_button = Button(text="Register", background_color=(0.1, 0.7, 0.3, 1), size_hint=(1, 0.2))
+        self.register_button = Button(text="Register", background_color=(0, 0, 1, 1), size_hint=(1, 0.2))
         self.register_button.bind(on_press=self.register)
         layout.add_widget(self.register_button)
 
@@ -173,9 +173,9 @@ class DashboardScreen(Screen):
         super(DashboardScreen, self).__init__(**kwargs)
         layout = FloatLayout()
 
-        self.easy_btn = Button(text="Easy", size_hint=(.3, .2), pos_hint={'x': .35, 'y': .6})
-        self.medium_btn = Button(text="Medium", size_hint=(.3, .2), pos_hint={'x': .35, 'y': .35})
-        self.hard_btn = Button(text="Hard", size_hint=(.3, .2), pos_hint={'x': .35, 'y': .1})
+        self.easy_btn = Button(text="Easy", size_hint=(.3, .2), pos_hint={'x': .35, 'y': .6},background_color=(0, 1, 0, 1))
+        self.medium_btn = Button(text="Medium", size_hint=(.3, .2), pos_hint={'x': .35, 'y': .35},background_color=(1, 1, 0, 1))
+        self.hard_btn = Button(text="Hard", size_hint=(.3, .2), pos_hint={'x': .35, 'y': .1},background_color=(1, 0, 0, 1))
 
         self.easy_btn.bind(on_press=self.start_game_easy)
         self.medium_btn.bind(on_press=self.start_game_medium)
@@ -210,7 +210,7 @@ class GameScreen(Screen):
                 self.buttons[i][j].bind(on_press=self.on_button_press)
                 self.layout.add_widget(self.buttons[i][j])
         self.add_widget(self.layout)
-        self.difficulty = 'hard'  # default difficulty
+        self.difficulty = 'hard' 
 
     def set_difficulty(self, difficulty):
         self.difficulty = difficulty
