@@ -1,5 +1,5 @@
 # ChatBot App
-*This is a simple chatbot application built using Python and Kivy framework, integrated with SQLite for user authentication and conversation logging.*
+*It's a straightforward Python application with a KivyMD interface. Users can sign up, log in, and then chat with a basic chatbot.*
 
 ## Features
 - **User Authentication:** *Allows users to register with a unique username and password. Existing users can log in securely.*
@@ -10,7 +10,8 @@
 ## Requirements
 1. *Python 3.x*
 2. *Kivy 2.x*
-3. *SQLite 3.x*
+3. *KivyMD*
+4. *SQLite 3.x*
 
 ## Installation and Setup
 ### 1. Clone the repository:
@@ -25,9 +26,11 @@ python Chatbot.py
 ```
 
 ## Usage
-- **Login/Register Screen:** *Enter your username and password to login. If you don't have an account, you can register.*
-- **Chat Screen:** *Interact with the chatbot by typing messages in the input field and pressing "***Send***". Type "***bye***" to exit the chat.*
-
+- *Launch the application.*
+- *Register a new user by entering a username and password, then click "***Register***".*
+- *Login with the registered username and password.*
+- *Chat with the bot by typing your messages and pressing Enter or clicking "***Send***".*
+  
 ## Contributing
 *Contributions are welcome! If you have any suggestions, improvements, or issues, please open an issue or submit a pull request.*
 
